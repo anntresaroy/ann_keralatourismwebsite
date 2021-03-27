@@ -3,6 +3,16 @@
 <head>
 	<link href="bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<title>Login Page</title>
+	<header>
+        <img src="images/kerala-tourism-logo-png-1.png" alt="logo">
+		<div class="headtag">
+			<a href="index.html">Home</a>
+			<a href="login.html">Login</a>
+			<a href="signup.html">Signup</a>
+			<a href="districts.html">Discover your Destination</a>
+		</div>
+	  
+    </header>
 	</head>
 	<body> 
 		 
@@ -39,6 +49,35 @@
 			.container{
 				padding-top: 2.5em;
 			}
+img{
+	width: 6.5em;
+	height: 4em;
+	margin-left: 10px;
+	
+}
+header{
+	background-color: white;
+	height: 5em;
+}
+.headtag a{
+	font-family:cursive;
+	text-decoration: none;
+	margin-right: 3em;
+	color: black;
+	border: 1px solid black;
+	border-radius: 20px 50px;
+	padding: 8px;
+}
+.headtag a:hover{
+	background-color: teal;
+	color: black;
+	transition: 0.5s ease-in-out;
+}
+.headtag{
+	float: right;
+	margin-top: 33px;
+	margin-right: 1em;
+}
 
 .card-container.card {
     width: 350px;
@@ -146,19 +185,3 @@ h5{
 .forgot-password:active,
 .forgot-password:focus{
     color: rgb(12, 97, 33);
-}
-</style>
-<script>
-function validateemail()  
-{  
-var x=document.myform.email.value;  
-var atposition=x.indexOf("@");  
-var dotposition=x.lastIndexOf(".");  
-if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
-  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
-  return false;  
-  }  
-}  
-</script>
-	</body>
-</html>
